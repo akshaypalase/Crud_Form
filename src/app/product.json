@@ -1,0 +1,18 @@
+{
+  "product": [
+    {
+      "productName": "red,mi",
+      "productPrice": "2000",
+      "productColor": "black",
+      "productQuantity": "50",
+      "id": 1
+    },
+    {
+      "productName": "Iphone",
+      "productPrice": "60000",
+      "productColor": "black",
+      "productQuantity": "1",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<section>
+    <form [formGroup]="productData">
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Name</mat-label>
+                <input matInput placeholder="Enter Product Name" formControlName="productName" />
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Price</mat-label>
+                <input matInput placeholder="Enter Product Price" formControlName="productPrice" />
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Color</mat-label>
+                <input matInput placeholder="Enter Product Color" formControlName="productColor" />
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Quantity</mat-label>
+                <input matInput placeholder="Enter Product Quantity" formControlName="productQuantity" />
+            </mat-form-field>
+        </p>
+    </form>
+    <div [align]="'end'">
+        <button mat-raised-button color="primary">CANCEL</button>
+        <button class="ms-3" mat-raised-button color="accent"
+            (click)="onSubmit(productData.value)">{{updateButton}}</button>
+    </div>
+</section>
